@@ -1,180 +1,175 @@
-# CashPilot — Landing page
+<div align="center">
 
-Marketing site for CashPilot, the mobile-first cash monitoring app for
-independent ATM operators.
+<img src="./cashpilot-logo.png" alt="CashPilot" width="480" />
 
-Built with Next.js 14 (App Router), TypeScript, React, and CSS Modules.
-Deployable to Vercel from a public GitHub repo. Contact form via Formspree.
-Checkout via Stripe Payment Links. Automation glue via Zapier.
+### Real-time cash monitoring for independent ATM operators
 
----
+**Stop driving to empty ATMs.** Know which machines need cash before you leave the house. Skip wasted trips. Never lose a Friday night to an empty machine.
 
-## Stack
+[![Live Demo](https://img.shields.io/badge/Live_Demo-cash--pilot--inky.vercel.app-185FA5?style=for-the-badge&logo=vercel&logoColor=white)](https://cash-pilot-inky.vercel.app/)
+[![GitHub](https://img.shields.io/badge/Repository-CashPilot-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jdbostonbu-ops/CashPilot)
 
-| Layer            | Choice                                        |
-| ---------------- | --------------------------------------------- |
-| Framework        | Next.js 14 (App Router)                       |
-| Language         | TypeScript (strict, `noImplicitAny`)          |
-| UI               | React 18                                      |
-| Styling          | CSS Modules + `globals.css` design tokens     |
-| Font             | Inter (via Google Fonts)                      |
-| Forms            | Formspree                                     |
-| Payments         | Stripe Payment Links (test mode)              |
-| Automation       | Zapier (Formspree → Sheets/Slack)             |
-| Hosting          | Vercel                                        |
-| Source control   | GitHub (public repo)                          |
+<br />
 
-No database. No API routes. No server code beyond what Next.js provides.
+![Next.js](https://img.shields.io/badge/Next.js_14-000000?style=flat-square&logo=next.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![CSS Modules](https://img.shields.io/badge/CSS_Modules-1572B6?style=flat-square&logo=css3&logoColor=white)
+![Stripe](https://img.shields.io/badge/Stripe-635BFF?style=flat-square&logo=stripe&logoColor=white)
+![Cal.com](https://img.shields.io/badge/Cal.com-292929?style=flat-square&logo=caldotcom&logoColor=white)
+![Zapier](https://img.shields.io/badge/Zapier-FF4A00?style=flat-square&logo=zapier&logoColor=white)
+![Formspree](https://img.shields.io/badge/Formspree-E5122E?style=flat-square&logo=formspree&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
+
+</div>
 
 ---
 
-## File layout
+## About CashPilot
 
-```
-cashpilot-landing/
-├── app/
-│   ├── layout.tsx          Root layout, metadata, favicon, Inter font
-│   ├── page.tsx            Composes all sections
-│   └── globals.css         Design tokens + resets
-├── components/
-│   ├── Logo/               Brand mark
-│   ├── Nav/                Sticky header with mobile menu
-│   ├── Hero/               Cream band — headline, sub, CTA, trust line
-│   ├── TrustBar/           Soft band — customer category pills
-│   ├── PainSection/        White band — 4 red cost stats
-│   ├── HowItWorks/         Navy dark band — 3-step onboarding
-│   ├── ProductScreens/     Soft band — dashboard + detail phones
-│   ├── WhoItsFor/          White band — 6 target segments
-│   ├── Features/           Soft band — 4 core capabilities
-│   ├── Testimonials/       White band — 3 operator quotes
-│   ├── ImpactStats/        Forest dark band — 4 big impact numbers
-│   ├── FAQ/                Soft band — 6 collapsible objections
-│   ├── Pricing/            White band — 3 tiers with Stripe links
-│   ├── FinalCTA/           Navy dark band — form + booking button
-│   └── Footer/             Navy-tint band — copyright + links
-├── lib/
-│   └── stripe.ts           Env-driven Stripe/Cal/Formspree links + handler factory
-├── public/
-│   ├── logo.svg            Full CashPilot logo (mark + wordmark)
-│   ├── logo-mark.svg       Mark only
-│   ├── favicon.svg         Browser tab icon
-│   ├── dashboard.svg       Product screenshot (fleet overview)
-│   └── detail.svg          Product screenshot (machine detail)
-├── .env.local.example      Copy to .env.local and fill in your values
-├── next.config.js
-├── package.json
-├── tsconfig.json           Strict mode, no implicit any
-└── README.md
-```
+CashPilot is a mobile-first monitoring service built for the 450,000+ independent ATM operators in the United States. Every operator — from solo route runners to established fleets — deals with the same daily problem: driving to a machine that didn't need cash, or worse, missing a machine that ran empty during peak hours. CashPilot solves that with real-time sensor data, distance-based alert thresholds, and route optimization that adapts to how the operator actually works.
 
----
+The mobile app is currently in development. This repository contains the go-to-market landing page and the automated lead-qualification pipeline that runs behind it.
 
-## Local setup
+## Why it matters
 
-**Prerequisites:** Node.js 18.17+ and npm.
+Independent ATM operators are running blind. Every route runs on gut feel and manual dashboard-checking, which leads to real costs:
+
+- Fuel, time, and vehicle wear burned on trips to machines that didn't need service
+- Empty machines during peak hours (Friday nights at bars, weekends at dispensaries) losing $150+ per outage in missed surcharge revenue
+- 15+ hours a week spent staring at dashboards and calling machines one at a time to check cash levels
+- No existing tool uses distance-based logic — a machine 8 minutes away shouldn't have the same refill threshold as one 90 minutes out
+
+## Features
+
+- **Real-time cash monitoring** across every machine in the route
+- **Distance-based alert thresholds** — set how far you are from each machine, and CashPilot adjusts when it pings you
+- **Route optimization** — when multiple machines need service, the app sequences them into the fastest loop
+- **Predictive refill forecasting** — machine learning forecasts each machine's next refill 2-3 days out
+- **Cash reconciliation reports** — auto-reconciles loaded vs. dispensed cash and catches discrepancies instantly
+- **Multi-user permissions** — for fleet operators managing teams
+- **Analytics API access** — for established operators who want to integrate with existing tools
+
+## Pricing tiers
+
+Displayed on the landing page:
+
+| Tier | Monthly | Machines | Best for |
+|------|---------|----------|----------|
+| Solo | **$39/mo** | Up to 4 | Solo operators just getting started |
+| Route | **$29/mo** | 5 – 24 | Growing operators building a route |
+| Fleet | **$19/mo** | 25+ | Established fleets running multi-state operations |
+
+Plus a one-time setup fee of **$200 – $500** depending on installation path (self-install vs. CashPilot-managed install).
+
+## Tech stack
+
+**Frontend**
+- Next.js 14 (App Router)
+- TypeScript (strict mode, no `any`, no `var`)
+- React
+- CSS Modules with global design tokens
+
+**Integrations (test mode)**
+- **Stripe** — Checkout Sessions for tiered subscription payments
+- **Cal.com** — booking scheduler for demo calls with custom machine-count qualification question
+- **Zapier** — automated lead qualification pipeline (Cal.com → AI classification → filter → Google Sheets)
+- **Formspree** — form submissions for the bottom-of-page contact CTA
+
+**Deployment**
+- Vercel (production)
+- GitHub (source control)
+
+## Behind the scenes — how leads get qualified
+
+Every "Book a 15-min call" click on the landing page fires a Zapier automation:
+
+1. **Cal.com trigger** — new booking with prospect name, email, machine count, and notes
+2. **AI by Zapier** — classifies the booking by tier (Solo / Route / Fleet), priority (high / medium / low / skip), and generates a one-sentence prep note
+3. **Filter by Zapier** — drops any booking rated "skip" (spam, blank forms, unqualifiable)
+4. **Google Sheets** — logs every qualified booking to a "CashPilot Bookings" sheet, revenue-ranked for morning prep
+
+This runs as internal ops tooling so the founder never walks into a demo call cold and high-value fleet prospects don't get buried under solo-tier inquiries.
+
+## Local development
+
+Clone the repo and install dependencies:
 
 ```bash
-# 1. Install dependencies
+git clone https://github.com/jdbostonbu-ops/CashPilot.git
+cd CashPilot
 npm install
+```
 
-# 2. Copy the env template and fill in real values
-cp .env.local.example .env.local
+Create a `.env` file at the project root with the following variables:
 
-# 3. Start the dev server
+```
+NEXT_PUBLIC_STRIPE_LINK_SOLO=price_XXXXXXXXXXXX
+NEXT_PUBLIC_STRIPE_LINK_ROUTE=price_XXXXXXXXXXXX
+NEXT_PUBLIC_STRIPE_LINK_FLEET=price_XXXXXXXXXXXX
+NEXT_PUBLIC_BOOKING_URL=https://cal.com/your-username/15min
+NEXT_PUBLIC_FORMSPREE_ENDPOINT=https://formspree.io/f/YOUR_ID
+STRIPE_SECRET_KEY=sk_test_YOUR_KEY
+```
+
+Run the dev server:
+
+```bash
 npm run dev
 ```
 
-The site runs at `http://localhost:3000`.
+Visit `http://localhost:3000`.
 
----
+## Project structure
 
-## Environment variables
-
-Fill these in `.env.local` (see `.env.local.example` for the template):
-
-| Variable                             | What it is                                       | Where to get it                                                    |
-| ------------------------------------ | ------------------------------------------------ | ------------------------------------------------------------------ |
-| `NEXT_PUBLIC_FORMSPREE_ENDPOINT`     | Contact-form submission URL                      | https://formspree.io/ — create a form, copy the endpoint           |
-| `NEXT_PUBLIC_STRIPE_LINK_SOLO`       | Stripe checkout URL for the Solo tier            | https://dashboard.stripe.com/test/payment-links — create a link    |
-| `NEXT_PUBLIC_STRIPE_LINK_ROUTE`      | Stripe checkout URL for the Route tier           | Same as above                                                      |
-| `NEXT_PUBLIC_STRIPE_LINK_FLEET`      | Stripe checkout URL for the Fleet tier           | Same as above                                                      |
-| `NEXT_PUBLIC_BOOKING_URL`            | Booking link for "Book a call" buttons           | https://cal.com/ — set up a 15-min event, copy the URL             |
-
-If a variable is missing, the corresponding button/form will safely no-op.
-
----
-
-## Zapier automation (optional)
-
-Wire form submissions into Google Sheets + Slack so leads land somewhere useful:
-
-1. In Formspree, connect your form to Zapier.
-2. In Zapier, create a Zap: **Trigger** = "New Submission in Formspree".
-3. **Action 1** = "Create Spreadsheet Row in Google Sheets" (map name/email/machines).
-4. **Action 2** = "Send Channel Message in Slack" — post to `#leads` with the details.
-5. Turn the Zap on. Every new lead now goes to both places automatically.
-
----
-
-## Deploy to Vercel
-
-1. Push the repo to GitHub (public is fine).
-2. In Vercel, click **Add New → Project** and import the repo.
-3. Under **Environment Variables**, add every variable from `.env.local`.
-4. Click **Deploy**.
-5. Every push to `main` from now on triggers an automatic redeploy.
-
----
-
-## Code conventions
-
-The codebase follows a few strict rules:
-
-- **No `any`.** `tsconfig.json` enforces `noImplicitAny`. All types are explicit.
-- **No `var`.** Only `const` and `let`.
-- **Closures for factory-style handlers.** See `createTierClickHandler` in
-  `lib/stripe.ts`, `createToggleHandler` in `FAQ.tsx`, and `createChangeHandler`
-  in `FinalCTA.tsx`. Each captures its argument in scope and returns a handler
-  bound to that value.
-- **User input goes through React's `{value}` interpolation**, which escapes
-  automatically — equivalent to `textContent`, never `innerHTML`.
-- **Component structure.** Every component lives in its own folder with a
-  `.tsx` and a `.module.css`. `globals.css` holds design tokens only.
-- **Color bands bleed edge-to-edge.** Each section is a full-width `<section>`
-  with its own background color drawn from the `--band-*` tokens. The content
-  inside is capped at `--max-content` (1120px) and centered.
-
----
-
-## Design tokens
-
-Defined once in `app/globals.css` under `:root`, referenced everywhere via
-`var(--token-name)`. Change a token in one place, it updates everywhere.
-
-Band colors: `--band-cream`, `--band-white`, `--band-soft`, `--band-navy`,
-`--band-navy-tint`, `--band-forest`, `--band-forest-tint`.
-
-Brand: `--brand-blue`, `--brand-blue-light`, `--brand-blue-lightest`,
-`--brand-blue-dark`.
-
-Semantic: `--success`, `--warning`, `--danger` (each with `-dark` and `-light`
-variants for text and background use).
-
----
-
-## Scripts
-
-```bash
-npm run dev          # Dev server on :3000
-npm run build        # Production build
-npm run start        # Serve the production build locally
-npm run lint         # ESLint (Next.js ruleset)
-npm run type-check   # tsc --noEmit
+```
+CashPilot/
+├── app/
+│   ├── api/checkout/         # Stripe Checkout Session API route
+│   ├── success/              # Post-payment success page
+│   ├── cancel/               # Post-payment cancel page
+│   ├── globals.css           # Design tokens + global styles
+│   ├── layout.tsx            # Root layout with font + metadata
+│   └── page.tsx              # Landing page composition
+├── components/
+│   ├── Nav/                  # Sticky navigation
+│   ├── Hero/                 # Hero section with primary CTA
+│   ├── TrustBar/             # Customer category badges
+│   ├── PainSection/          # Problem framing
+│   ├── HowItWorks/           # 3-step how-it-works flow
+│   ├── ProductScreens/       # App screenshots
+│   ├── WhoItsFor/            # Target customer breakdown
+│   ├── Features/             # Feature grid
+│   ├── Testimonials/         # Operator quotes
+│   ├── ImpactStats/          # Results metrics
+│   ├── FAQ/                  # Objection-handling FAQ
+│   ├── Pricing/              # 3-tier pricing cards
+│   ├── FinalCTA/             # Bottom form + closing pitch
+│   └── Footer/               # Footer with links
+├── lib/
+│   └── stripe.ts             # Stripe helper + click handler factory
+└── public/                   # Logo, favicons, product screenshots
 ```
 
 ---
 
-## License
+<div align="center">
 
-Private / all rights reserved. This is a portfolio project — not for
-redistribution.
+## Author
+
+<a href="https://github.com/jdbostonbu-ops">
+  <img src="https://github.com/jdbostonbu-ops.png" alt="Jacqueline Delgado" width="100" style="border-radius: 50%;" />
+</a>
+
+**Jacqueline Delgado**
+*AI Collaborative Software Engineer · Founder, Hum LLC*
+
+[![GitHub](https://img.shields.io/badge/@jdbostonbu--ops-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jdbostonbu-ops)
+
+<br />
+
+### If CashPilot is useful to you, please star this repo ⭐
+
+[![Star on GitHub](https://img.shields.io/github/stars/jdbostonbu-ops/CashPilot?style=for-the-badge&logo=github&label=Star%20on%20GitHub&color=185FA5)](https://github.com/jdbostonbu-ops/CashPilot)
+
+</div>
