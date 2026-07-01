@@ -1,10 +1,10 @@
 /**
- * Stripe Payment Links (test mode), Cal.com booking URL, and Formspree endpoint.
+ * Stripe integration — Price IDs + API route pattern.
  *
- * IMPORTANT: process.env.NEXT_PUBLIC_* must be referenced LITERALLY, not through
- * a helper function. Next.js inlines these references at build time — server
- * and client end up with identical string constants baked into the bundle,
- * which is what prevents hydration mismatches on <a href> attributes.
+ * NEXT_PUBLIC_STRIPE_LINK_* env vars hold Stripe Price IDs (price_...).
+ * The click handler POSTs the Price ID to /api/checkout, which uses the
+ * server-side STRIPE_SECRET_KEY to create a Checkout Session and returns
+ * the hosted checkout URL. The browser then redirects to that URL.
  */
 
 export type PricingTierId = "solo" | "route" | "fleet";
@@ -17,11 +17,17 @@ export interface PricingTierConfig {
 
 const FALLBACK_URL = "https://example.com";
 
-export const stripeLinks: Readonly<Record<PricingTierId, string>> = {
-  solo: process.env.NEXT_PUBLIC_STRIPE_LINK_SOLO || FALLBACK_URL,
-  route: process.env.NEXT_PUBLIC_STRIPE_LINK_ROUTE || FALLBACK_URL,
-  fleet: process.env.NEXT_PUBLIC_STRIPE_LINK_FLEET || FALLBACK_URL,
+export const stripePriceIds: Readonly<Record<PricingTierId, string>> = {
+  solo: process.env.NEXT_PUBLIC_STRIPE_LINK_SOLO || "",
+  route: process.env.NEXT_PUBLIC_STRIPE_LINK_ROUTE || "",
+  fleet: process.env.NEXT_PUBLIC_STRIPE_LINK_FLEET || "",
 };
+
+/**
+ * Kept for backward compatibility with any component that still imports
+ * stripeLinks. Now holds Price IDs, not URLs.
+ */
+export const stripeLinks: Readonly<Record<PricingTierId, string>> = stripePriceIds;
 
 export const bookingUrl: string =
   process.env.NEXT_PUBLIC_BOOKING_URL || FALLBACK_URL;
@@ -30,24 +36,41 @@ export const formspreeEndpoint: string =
   process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT || FALLBACK_URL;
 
 /**
- * Closure-based factory that returns a click handler for a given pricing tier.
- * The returned handler captures the tier id in its closure and opens the correct
- * Stripe payment link in a new tab when invoked.
+ * Closure-based factory that returns an async click handler for a given
+ * pricing tier. The handler POSTs the tier's Price ID to /api/checkout,
+ * receives a Stripe Checkout Session URL, and redirects the browser to it.
  */
-export const createTierClickHandler = (tier: PricingTierId): (() => void) => {
-  return (): void => {
-    const link = stripeLinks[tier];
-    if (typeof window !== "undefined" && link !== FALLBACK_URL) {
-      window.open(link, "_blank", "noopener,noreferrer");
+export const createTierClickHandler = (tier: PricingTierId): (() => Promise<void>) => {
+  return async (): Promise<void> => {
+    const priceId = stripePriceIds[tier];
+    if (!priceId || typeof window === "undefined") {
+      return;
+    }
+
+    try {
+      const response = await fetch("/api/checkout", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ priceId }),
+      });
+
+      const data = (await response.json()) as { url?: string; error?: string };
+
+      if (data.url) {
+        window.location.href = data.url;
+      } else {
+        console.error("Checkout failed:", data.error);
+      }
+    } catch (error) {
+      console.error("Checkout request failed:", error);
     }
   };
 };
 
 /**
- * Predicate used by pricing UI to decide whether to show the "start checkout"
- * secondary button for a given tier. Returns true only when a real Stripe
- * payment link has been configured in the environment.
+ * Predicate used by pricing UI to decide whether to show the checkout button
+ * for a given tier. Returns true when a Price ID has been configured.
  */
 export const hasConfiguredStripeLink = (tier: PricingTierId): boolean => {
-  return stripeLinks[tier] !== FALLBACK_URL;
+  return stripePriceIds[tier].length > 0;
 };
