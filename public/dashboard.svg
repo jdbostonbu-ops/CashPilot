@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 540" role="img" aria-label="CashPilot dashboard screen showing fleet overview">
+  <title>CashPilot Dashboard</title>
+
+  <rect x="0" y="0" width="280" height="540" rx="30" fill="#0E0E0E"/>
+  <rect x="8" y="8" width="264" height="524" rx="24" fill="#FFFFFF"/>
+
+  <text x="24" y="30" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#1A1A17">9:41</text>
+  <g transform="translate(216, 22)" fill="#1A1A17">
+    <path d="M0 5 L2 5 L2 3 L0 3 Z M4 5 L6 5 L6 1 L4 1 Z M8 5 L10 5 L10 -1 L8 -1 Z"/>
+    <path d="M16 4 Q18 2 20 4" stroke="#1A1A17" stroke-width="1.2" fill="none"/>
+    <path d="M14 6 Q18 2 22 6" stroke="#1A1A17" stroke-width="1.2" fill="none"/>
+    <circle cx="18" cy="7" r="1"/>
+    <rect x="30" y="1" width="14" height="7" rx="1.5" fill="none" stroke="#1A1A17" stroke-width="1"/>
+    <rect x="31" y="2" width="10" height="5" fill="#1A1A17"/>
+  </g>
+
+  <text x="24" y="66" font-family="Inter, sans-serif" font-size="18" font-weight="600" fill="#1A1A17">Dashboard</text>
+  <g transform="translate(232, 52)">
+    <path d="M8 4 C4 4 4 8 4 12 L4 15 L3 17 L15 17 L14 15 L14 12 C14 8 12 4 8 4" fill="none" stroke="#1A1A17" stroke-width="1.5"/>
+    <path d="M6 19 L12 19 Q11 22 9 22 Q7 22 6 19" fill="#1A1A17"/>
+    <circle cx="14" cy="6" r="4" fill="#E24B4A"/>
+    <text x="14" y="8.5" font-family="Inter, sans-serif" font-size="7" font-weight="600" fill="#FFFFFF" text-anchor="middle">1</text>
+  </g>
+
+  <g transform="translate(24, 86)">
+    <rect x="0" y="0" width="76" height="54" rx="8" fill="#F4F3EE"/>
+    <text x="38" y="26" font-family="Inter, sans-serif" font-size="18" font-weight="600" fill="#1A1A17" text-anchor="middle">8</text>
+    <text x="38" y="42" font-family="Inter, sans-serif" font-size="10" fill="#6B6B65" text-anchor="middle">Machines</text>
+  </g>
+  <g transform="translate(102, 86)">
+    <rect x="0" y="0" width="76" height="54" rx="8" fill="#F4F3EE"/>
+    <text x="38" y="26" font-family="Inter, sans-serif" font-size="18" font-weight="600" fill="#1A1A17" text-anchor="middle">1</text>
+    <text x="38" y="42" font-family="Inter, sans-serif" font-size="10" fill="#6B6B65" text-anchor="middle">Alerts</text>
+  </g>
+  <g transform="translate(180, 86)">
+    <rect x="0" y="0" width="76" height="54" rx="8" fill="#F4F3EE"/>
+    <text x="38" y="26" font-family="Inter, sans-serif" font-size="17" font-weight="600" fill="#1A1A17" text-anchor="middle">$847</text>
+    <text x="38" y="42" font-family="Inter, sans-serif" font-size="10" fill="#6B6B65" text-anchor="middle">Today</text>
+  </g>
+
+  <text x="24" y="164" font-family="Inter, sans-serif" font-size="9" font-weight="600" fill="#6B6B65" letter-spacing="1">MACHINES</text>
+
+  <g transform="translate(24, 174)">
+    <rect x="0" y="0" width="232" height="42" rx="7" fill="#F4F3EE"/>
+    <rect x="0" y="0" width="3" height="42" fill="#E24B4A"/>
+    <circle cx="20" cy="21" r="11" fill="#FFFFFF"/>
+    <path d="M15 22 Q17 17 22 17 Q22 22 17 25 Q15 25 15 22 Z" fill="#0F6E56"/>
+    <text x="38" y="19" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#1A1A17">Green Leaf</text>
+    <text x="38" y="32" font-family="Inter, sans-serif" font-size="10" fill="#6B6B65">Dispensary · 30 min</text>
+    <text x="222" y="19" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#1A1A17" text-anchor="end">18%</text>
+    <text x="222" y="32" font-family="Inter, sans-serif" font-size="9" fill="#6B6B65" text-anchor="end">Cash</text>
+  </g>
+
+  <g transform="translate(24, 220)">
+    <rect x="0" y="0" width="232" height="42" rx="7" fill="#F4F3EE"/>
+    <rect x="0" y="0" width="3" height="42" fill="#1D9E75"/>
+    <circle cx="20" cy="21" r="11" fill="#FFFFFF"/>
+    <rect x="16" y="15" width="8" height="12" rx="1" fill="#EF9F27"/>
+    <rect x="17" y="15" width="6" height="3" fill="#FFFFFF"/>
+    <text x="38" y="19" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#1A1A17">O'Malley's Pub</text>
+    <text x="38" y="32" font-family="Inter, sans-serif" font-size="10" fill="#6B6B65">Nightlife · 12 min</text>
+    <text x="222" y="19" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#1A1A17" text-anchor="end">67%</text>
+    <text x="222" y="32" font-family="Inter, sans-serif" font-size="9" fill="#6B6B65" text-anchor="end">Cash</text>
+  </g>
+
+  <g transform="translate(24, 266)">
+    <rect x="0" y="0" width="232" height="42" rx="7" fill="#F4F3EE"/>
+    <rect x="0" y="0" width="3" height="42" fill="#1D9E75"/>
+    <circle cx="20" cy="21" r="11" fill="#FFFFFF"/>
+    <path d="M20 14 C20 14 15 20 15 24 C15 27 17 29 20 29 C23 29 25 27 25 24 C25 20 20 14 20 14 Z" fill="#378ADD"/>
+    <text x="38" y="19" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#1A1A17">Sunny Wash</text>
+    <text x="38" y="32" font-family="Inter, sans-serif" font-size="10" fill="#6B6B65">Laundromat · 8 min</text>
+    <text x="222" y="19" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#1A1A17" text-anchor="end">84%</text>
+    <text x="222" y="32" font-family="Inter, sans-serif" font-size="9" fill="#6B6B65" text-anchor="end">Cash</text>
+  </g>
+
+  <g transform="translate(24, 312)">
+    <rect x="0" y="0" width="232" height="42" rx="7" fill="#F4F3EE"/>
+    <rect x="0" y="0" width="3" height="42" fill="#EF9F27"/>
+    <circle cx="20" cy="21" r="11" fill="#FFFFFF"/>
+    <rect x="16" y="14" width="7" height="14" rx="1" fill="none" stroke="#6B6B65" stroke-width="1.2"/>
+    <rect x="17" y="16" width="5" height="3" fill="#6B6B65"/>
+    <rect x="23" y="17" width="3" height="6" rx="0.5" fill="none" stroke="#6B6B65" stroke-width="1"/>
+    <text x="38" y="19" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#1A1A17">Route 6 Fuel</text>
+    <text x="38" y="32" font-family="Inter, sans-serif" font-size="10" fill="#6B6B65">Rural · 45 min</text>
+    <text x="222" y="19" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#1A1A17" text-anchor="end">42%</text>
+    <text x="222" y="32" font-family="Inter, sans-serif" font-size="9" fill="#6B6B65" text-anchor="end">Cash</text>
+  </g>
+
+  <g transform="translate(24, 358)">
+    <rect x="0" y="0" width="232" height="42" rx="7" fill="#F4F3EE"/>
+    <rect x="0" y="0" width="3" height="42" fill="#1D9E75"/>
+    <circle cx="20" cy="21" r="11" fill="#FFFFFF"/>
+    <path d="M14 15 L26 15 L25 27 L15 27 Z" fill="none" stroke="#6B6B65" stroke-width="1.2"/>
+    <path d="M17 15 L17 12 L23 12 L23 15" fill="none" stroke="#6B6B65" stroke-width="1.2"/>
+    <text x="38" y="19" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#1A1A17">Corner Bodega</text>
+    <text x="38" y="32" font-family="Inter, sans-serif" font-size="10" fill="#6B6B65">Neighborhood · 6 min</text>
+    <text x="222" y="19" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#1A1A17" text-anchor="end">58%</text>
+    <text x="222" y="32" font-family="Inter, sans-serif" font-size="9" fill="#6B6B65" text-anchor="end">Cash</text>
+  </g>
+
+  <g transform="translate(24, 460)">
+    <rect x="0" y="0" width="232" height="50" rx="10" fill="#F4F3EE"/>
+    <g transform="translate(20, 12)">
+      <rect x="0" y="0" width="14" height="14" rx="2" fill="none" stroke="#185FA5" stroke-width="1.5"/>
+      <text x="7" y="28" font-family="Inter, sans-serif" font-size="8" fill="#185FA5" text-anchor="middle">Home</text>
+    </g>
+    <g transform="translate(78, 12)">
+      <path d="M2 4 L6 2 L10 4 L14 2 L14 12 L10 14 L6 12 L2 14 Z" fill="none" stroke="#6B6B65" stroke-width="1.3"/>
+      <text x="8" y="28" font-family="Inter, sans-serif" font-size="8" fill="#6B6B65" text-anchor="middle">Route</text>
+    </g>
+    <g transform="translate(138, 12)">
+      <rect x="1" y="8" width="3" height="6" fill="#6B6B65"/>
+      <rect x="6" y="4" width="3" height="10" fill="#6B6B65"/>
+      <rect x="11" y="1" width="3" height="13" fill="#6B6B65"/>
+      <text x="8" y="28" font-family="Inter, sans-serif" font-size="8" fill="#6B6B65" text-anchor="middle">Reports</text>
+    </g>
+    <g transform="translate(196, 12)">
+      <circle cx="8" cy="8" r="7" fill="none" stroke="#6B6B65" stroke-width="1.3"/>
+      <circle cx="8" cy="8" r="2" fill="#6B6B65"/>
+      <text x="8" y="28" font-family="Inter, sans-serif" font-size="8" fill="#6B6B65" text-anchor="middle">Settings</text>
+    </g>
+  </g>
+</svg>

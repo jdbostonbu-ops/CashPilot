@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 540" role="img" aria-label="CashPilot machine detail screen showing the automation trigger firing">
+  <title>CashPilot Machine Detail</title>
+
+  <rect x="0" y="0" width="280" height="540" rx="30" fill="#0E0E0E"/>
+  <rect x="8" y="8" width="264" height="524" rx="24" fill="#FFFFFF"/>
+
+  <text x="24" y="30" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#1A1A17">9:41</text>
+  <g transform="translate(216, 22)" fill="#1A1A17">
+    <path d="M0 5 L2 5 L2 3 L0 3 Z M4 5 L6 5 L6 1 L4 1 Z M8 5 L10 5 L10 -1 L8 -1 Z"/>
+    <path d="M16 4 Q18 2 20 4" stroke="#1A1A17" stroke-width="1.2" fill="none"/>
+    <path d="M14 6 Q18 2 22 6" stroke="#1A1A17" stroke-width="1.2" fill="none"/>
+    <circle cx="18" cy="7" r="1"/>
+    <rect x="30" y="1" width="14" height="7" rx="1.5" fill="none" stroke="#1A1A17" stroke-width="1"/>
+    <rect x="31" y="2" width="10" height="5" fill="#1A1A17"/>
+  </g>
+
+  <g transform="translate(24, 52)">
+    <path d="M0 4 L6 -2 L6 10 Z" fill="#6B6B65" transform="translate(0, 3)"/>
+    <text x="14" y="10" font-family="Inter, sans-serif" font-size="12" fill="#6B6B65">Dashboard</text>
+  </g>
+
+  <text x="24" y="94" font-family="Inter, sans-serif" font-size="20" font-weight="600" fill="#1A1A17">Green Leaf</text>
+  <g transform="translate(24, 104)">
+    <path d="M4 8 C4 5 6 3 8 3 C10 3 12 5 12 8 C12 11 8 15 8 15 C8 15 4 11 4 8 Z" fill="none" stroke="#6B6B65" stroke-width="1.2"/>
+    <circle cx="8" cy="8" r="2" fill="none" stroke="#6B6B65" stroke-width="1.2"/>
+    <text x="18" y="14" font-family="Inter, sans-serif" font-size="11" fill="#6B6B65">Dispensary · 1247 Main St</text>
+  </g>
+
+  <g transform="translate(24, 132)">
+    <rect x="0" y="0" width="232" height="46" rx="8" fill="#FCEBEB"/>
+    <g transform="translate(12, 12)">
+      <circle cx="10" cy="10" r="10" fill="#FFFFFF"/>
+      <path d="M10 4 C6 4 6 8 6 12 L6 14 L5 15 L15 15 L14 14 L14 12 C14 8 12 4 10 4" fill="#A32D2D"/>
+      <path d="M8 17 L12 17 Q11 19 10 19 Q9 19 8 17" fill="#A32D2D"/>
+      <path d="M2 4 L4 6 M18 4 L16 6" stroke="#A32D2D" stroke-width="1.3"/>
+    </g>
+    <text x="44" y="22" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#A32D2D">Action needed now</text>
+    <text x="44" y="36" font-family="Inter, sans-serif" font-size="9" fill="#A32D2D" fill-opacity="0.85">Cash at 18% · 30 min away · window closing</text>
+  </g>
+
+  <g transform="translate(24, 190)">
+    <rect x="0" y="0" width="232" height="180" rx="10" fill="#F4F3EE"/>
+
+    <g transform="translate(62, 20)">
+      <svg width="108" height="108" viewBox="0 0 120 120">
+        <g transform="rotate(-90 60 60)">
+          <circle cx="60" cy="60" r="50" fill="none" stroke="#E8E7E1" stroke-width="9"/>
+          <circle cx="60" cy="60" r="50" fill="none" stroke="#E24B4A" stroke-width="9" stroke-dasharray="314" stroke-dashoffset="258" stroke-linecap="round"/>
+        </g>
+      </svg>
+      <text x="54" y="60" font-family="Inter, sans-serif" font-size="26" font-weight="600" fill="#1A1A17" text-anchor="middle">18%</text>
+      <text x="54" y="76" font-family="Inter, sans-serif" font-size="9" fill="#6B6B65" text-anchor="middle">Cash level</text>
+    </g>
+
+    <g transform="translate(72, 140)">
+      <path d="M8 3 L14 12 L2 12 Z" fill="#A32D2D"/>
+      <rect x="7" y="6" width="2" height="4" fill="#FFFFFF"/>
+      <circle cx="8" cy="12" r="0.8" fill="#FFFFFF"/>
+      <text x="22" y="13" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#A32D2D">Below your threshold</text>
+    </g>
+  </g>
+
+  <g transform="translate(24, 382)">
+    <rect x="0" y="0" width="112" height="52" rx="7" fill="#F4F3EE"/>
+    <g transform="translate(10, 10)">
+      <path d="M2 4 L6 2 L10 4 L14 2 L14 10 L10 12 L6 10 L2 12 Z" fill="none" stroke="#6B6B65" stroke-width="1.2"/>
+    </g>
+    <text x="30" y="20" font-family="Inter, sans-serif" font-size="9" fill="#6B6B65">Your distance</text>
+    <text x="10" y="42" font-family="Inter, sans-serif" font-size="13" font-weight="600" fill="#1A1A17">30 min away</text>
+  </g>
+
+  <g transform="translate(144, 382)">
+    <rect x="0" y="0" width="112" height="52" rx="7" fill="#F4F3EE"/>
+    <g transform="translate(10, 10)">
+      <circle cx="8" cy="8" r="7" fill="none" stroke="#6B6B65" stroke-width="1.2"/>
+      <circle cx="8" cy="8" r="4" fill="none" stroke="#6B6B65" stroke-width="1.2"/>
+      <circle cx="8" cy="8" r="1.5" fill="#6B6B65"/>
+    </g>
+    <text x="30" y="20" font-family="Inter, sans-serif" font-size="9" fill="#6B6B65">Alert threshold</text>
+    <text x="10" y="42" font-family="Inter, sans-serif" font-size="13" font-weight="600" fill="#1A1A17">25% (custom)</text>
+  </g>
+
+  <g transform="translate(24, 448)">
+    <rect x="0" y="0" width="232" height="44" rx="8" fill="#185FA5"/>
+    <text x="116" y="27" font-family="Inter, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle">Get directions now  →</text>
+  </g>
+</svg>

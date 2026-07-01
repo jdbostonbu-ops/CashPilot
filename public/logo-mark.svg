@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="CashPilot mark">
+  <title>CashPilot</title>
+  <rect x="0" y="0" width="48" height="48" rx="12" fill="#185FA5"/>
+  <circle cx="24" cy="24" r="14.5" fill="none" stroke="#FAFAF7" stroke-opacity="0.28" stroke-width="2.5"/>
+  <path d="M 24 9.5 A 14.5 14.5 0 1 1 9.5 28" fill="none" stroke="#FAFAF7" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M 24 11.5 L 27 24 L 24 22.5 L 21 24 Z" fill="#FAFAF7"/>
+  <circle cx="24" cy="24" r="2.5" fill="#FAFAF7"/>
+</svg>
