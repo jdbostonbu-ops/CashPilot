@@ -29,7 +29,7 @@ const tiers: readonly PricingTier[] = [
     featured: false,
     features: [
       "Real-time cash monitoring",
-      "Distance-based alerts",
+      "Distance-based alert thresholds",
       "Mobile app + web dashboard",
       "Email support",
     ],
@@ -43,9 +43,8 @@ const tiers: readonly PricingTier[] = [
     featured: true,
     features: [
       "Everything in Solo",
-      "Route optimization",
-      "Predictive refill forecasting",
-      "Cash reconciliation reports",
+      "Smart route sequencing",
+      "Distance-based alert thresholds",
       "Priority support",
     ],
   },

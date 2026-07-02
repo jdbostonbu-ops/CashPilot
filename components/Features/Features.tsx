@@ -8,33 +8,35 @@ interface Feature {
 
 const features: readonly Feature[] = [
   {
-    icon: "target",
-    heading: "Distance-based thresholds",
+    icon: "cash",
+    heading: "Real-time cash monitoring",
     description:
-      "Set higher thresholds for far-away machines so you never get caught two hours out.",
+      "See live cash levels across every machine in your route before you leave.",
   },
   {
     icon: "route",
-    heading: "Route optimization",
+    heading: "Smart route sequencing",
     description:
       "When multiple machines need service, the app sequences them into the fastest route.",
   },
   {
-    icon: "brain",
-    heading: "Predictive refills",
+    icon: "target",
+    heading: "Distance-based alert thresholds",
     description:
-      "Machine learning forecasts each machine's next refill 2-3 days out, so you plan ahead.",
-  },
-  {
-    icon: "shield",
-    heading: "Cash reconciliation",
-    description:
-      "Auto-reconciles loaded cash against dispensed cash. Catches discrepancies instantly.",
+      "Set higher thresholds for far-away machines so you never get caught two hours out.",
   },
 ];
 
 const FeatureIcon = ({ name }: { readonly name: string }): JSX.Element => {
   const iconMap: Record<string, JSX.Element> = {
+    cash: (
+      <>
+        <rect x="4" y="7" width="16" height="10" rx="2" />
+        <circle cx="12" cy="12" r="2.5" />
+        <path d="M7 10 L7 14" />
+        <path d="M17 10 L17 14" />
+      </>
+    ),
     target: (
       <>
         <circle cx="12" cy="12" r="9" />
@@ -47,18 +49,6 @@ const FeatureIcon = ({ name }: { readonly name: string }): JSX.Element => {
         <circle cx="6" cy="6" r="2.5" />
         <circle cx="18" cy="18" r="2.5" />
         <path d="M6 9 Q6 15 12 15 Q18 15 18 15" strokeDasharray="2 2" fill="none" />
-      </>
-    ),
-    brain: (
-      <>
-        <path d="M9 6 Q6 6 6 9 Q4 10 4 12 Q4 15 7 15 Q7 18 10 18 L10 6 Z" />
-        <path d="M14 6 Q17 6 17 9 Q19 10 19 12 Q19 15 16 15 Q16 18 13 18 L13 6 Q14 6 14 6 Z" />
-      </>
-    ),
-    shield: (
-      <>
-        <path d="M12 3 L20 6 L20 12 Q20 18 12 21 Q4 18 4 12 L4 6 Z" />
-        <path d="M9 12 L11 14 L15 10" fill="none" strokeWidth="2" />
       </>
     ),
   };

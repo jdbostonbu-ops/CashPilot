@@ -8,9 +8,9 @@ const Hero = (): JSX.Element => (
         <span aria-hidden="true">✦</span> Automation for independent ATM operators
       </span>
       <h1 className={styles.h1}>
-        Stop driving to
+        Only drive when
         <br />
-        <em>empty ATMs.</em>
+        <em>it matters.</em>
       </h1>
       <p className={styles.sub}>
         Know which machines need cash before you leave the house.

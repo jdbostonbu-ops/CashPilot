@@ -4,7 +4,7 @@
 
 ### Real-time cash monitoring for independent ATM operators
 
-**Stop driving to empty ATMs.** Know which machines need cash before you leave the house. Skip wasted trips. Never lose a Friday night to an empty machine.
+**Only drive when it matters.** Know which machines need cash before you leave the house. Skip wasted trips. Never lose a Friday night to an empty machine.
 
 [![Live Demo](https://img.shields.io/badge/Live_Demo-cash--pilot--inky.vercel.app-185FA5?style=for-the-badge&logo=vercel&logoColor=white)](https://cash-pilot-inky.vercel.app/)
 [![GitHub](https://img.shields.io/badge/Repository-CashPilot-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jdbostonbu-ops/CashPilot)
@@ -27,7 +27,7 @@
 
 ## About CashPilot
 
-CashPilot is a mobile-first monitoring service built for the 450,000+ independent ATM operators in the United States. Every operator — from solo route runners to established fleets — deals with the same daily problem: driving to a machine that didn't need cash, or worse, missing a machine that ran empty during peak hours. CashPilot solves that with real-time sensor data, distance-based alert thresholds, and route optimization that adapts to how the operator actually works.
+CashPilot is a mobile-first monitoring service built for the 450,000+ independent ATM operators in the United States. Every operator — from solo route runners to established fleets — deals with the same daily problem: driving to a machine that didn't need cash, or worse, missing a machine that ran empty during peak hours. CashPilot solves that with real-time cash monitoring, distance-based alert thresholds, and smart route sequencing that adapts to how the operator actually works.
 
 The mobile app is currently in development. This repository contains the go-to-market landing page and the automated lead-qualification pipeline that runs behind it.
 
@@ -42,13 +42,9 @@ Independent ATM operators are running blind. Every route runs on gut feel and ma
 
 ## Features
 
-- **Real-time cash monitoring** across every machine in the route
+- **Smart route sequencing** — when multiple machines need service, the app sequences them into the fastest loop
 - **Distance-based alert thresholds** — set how far you are from each machine, and CashPilot adjusts when it pings you
-- **Route optimization** — when multiple machines need service, the app sequences them into the fastest loop
-- **Predictive refill forecasting** — machine learning forecasts each machine's next refill 2-3 days out
-- **Cash reconciliation reports** — auto-reconciles loaded vs. dispensed cash and catches discrepancies instantly
-- **Multi-user permissions** — for fleet operators managing teams
-- **Analytics API access** — for established operators who want to integrate with existing tools
+- **Real-time cash monitoring** across every machine in the route
 
 ## Pricing tiers
 

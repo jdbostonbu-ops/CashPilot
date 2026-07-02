@@ -49,9 +49,16 @@
   background: var(--band-white);
   padding: 28px;
   border-radius: var(--radius-lg);
-  border: 1px solid var(--border);
+  border: 1px solid rgba(24, 95, 165, 0.28);
+  box-shadow: 0 10px 24px rgba(24, 95, 165, 0.08);
   display: flex;
   gap: 16px;
+}
+
+.card:last-child {
+  grid-column: 1 / -1;
+  justify-self: center;
+  width: calc((100% - 14px) / 2);
 }
 
 .iconWrap {
@@ -82,6 +89,10 @@
 @media (max-width: 720px) {
   .grid {
     grid-template-columns: 1fr;
+  }
+  .card:last-child {
+    grid-column: auto;
+    width: 100%;
   }
   .h2 {
     font-size: 54px;
