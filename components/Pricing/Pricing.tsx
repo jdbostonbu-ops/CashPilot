@@ -25,7 +25,7 @@ const tiers: readonly PricingTier[] = [
     name: "Solo",
     description: "Getting started",
     price: "$39",
-    range: "per machine · up to 4",
+    range: "per machine · up to 4 in one state",
     featured: false,
     features: [
       "Real-time cash monitoring",
@@ -39,7 +39,7 @@ const tiers: readonly PricingTier[] = [
     name: "Route",
     description: "Growing operators",
     price: "$29",
-    range: "per machine · 5 to 24",
+    range: "per machine · 5 to 24 in one state",
     featured: true,
     features: [
       "Everything in Solo",
