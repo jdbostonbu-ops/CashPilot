@@ -53,7 +53,7 @@ const tiers: readonly PricingTier[] = [
     name: "Fleet",
     description: "Established routes",
     price: "$19",
-    range: "per machine · 25+",
+    range: "per machine · up to 35 in one state",
     featured: false,
     features: [
       "Everything in Route",
