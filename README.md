@@ -27,7 +27,7 @@
 
 ## About CashPilot
 
-CashPilot is a mobile-first monitoring service built for the 450,000+ independent ATM operators in the United States. Every operator — from solo route runners to established fleets — deals with the same daily problem: driving to a machine that didn't need cash, or worse, missing a machine that ran empty during peak hours. CashPilot solves that with real-time cash monitoring, distance-based alert thresholds, and smart route sequencing that adapts to how the operator actually works.
+CashPilot is a landing page built for mobile-first monitoring service built for the 450,000+ independent ATM operators in the United States. Every operator — from solo route runners to established fleets — deals with the same daily problem: driving to a machine that didn't need cash, or worse, missing a machine that ran empty during peak hours. CashPilot solves that with real-time cash monitoring, distance-based alert thresholds, and smart route sequencing that adapts to how the operator actually works.
 
 The mobile app is currently in development. This repository contains the go-to-market landing page and the automated lead-qualification pipeline that runs behind it.
 
